@@ -1,4 +1,0 @@
-# Created at 2022-01-16T12:31:19.245
-Boot Manifest-JAR contains absolute paths in classpath 'D:\VAP_Automation\T2C_VAP\target\test-classes'
-Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
-
