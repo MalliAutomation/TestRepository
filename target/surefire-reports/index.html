@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>D:\VAP_Automation\T2C_VAP\testng.xml</span>
+                    <span>C:\Users\dgmarjun\git\TestRepository\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods,   7 passed</span>
+                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="xlByte.AddTenantTest" class="method navigator-link" hash-for-method="verifyTenantValidation">verifyTenantValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -132,11 +146,6 @@
                         <a href="#" panel-name="suite-Suite" title="xlByte.AddTenantTest" class="method navigator-link" hash-for-method="verifyTenant">verifyTenant</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="xlByte.AddTenantTest" class="method navigator-link" hash-for-method="verifyTenantValidation">verifyTenantValidation</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
@@ -149,6 +158,45 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">xlByte.AddTenantTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTenantValidation">
+                  </a> <!-- verifyTenantValidation -->
+                  <span class="method-name">verifyTenantValidation</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span _ngcontent-vxe-c237=&quot;&quot;&gt;...&lt;/span&gt; is not clickable at point (1331, 260). Other element would receive the click: &lt;button _ngcontent-vxe-c237=&quot;&quot; mat-button=&quot;&quot; mattooltip=&quot;Deactivate Requirement&quot; class=&quot;mat-focus-indicator mat-button mat-button-base ng-star-inserted&quot; aria-describedby=&quot;cdk-describedby-message-3&quot; cdk-describedby-host=&quot;&quot;&gt;...&lt;/button&gt;
+  (Session info: chrome=97.0.4692.99)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;MALLIKARJUNA-PC&apos;, ip: &apos;172.17.144.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\dgmarjun\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59642}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7ac43e8cecc25a0dd9329e0f80fb9ae2
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+	at pages.TenantsPage.clickOnAddButtton(TenantsPage.java:55)
+	at xlByte.AddTenantTest.verifyTenantValidation(AddTenantTest.java:61)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(verify tenat page field validation)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -182,13 +230,21 @@
 (Verify Tenant)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">xlByte.MailSettingToTenantTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyTenantValidation">
-                  </a> <!-- verifyTenantValidation -->
-                  <span class="method-name">verifyTenantValidation</span>
+                  <a name="addMailSetttings">
+                  </a> <!-- addMailSetttings -->
+                  <span class="method-name">addMailSetttings</span>
                   <em>
-(verify tenat page field validation)                  </em>
+(Add mail settings)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -219,27 +275,10 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">xlByte.MailSettingToTenantTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="addMailSetttings">
-                  </a> <!-- addMailSetttings -->
-                  <span class="method-name">addMailSetttings</span>
-                  <em>
-(Add mail settings)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\VAP_Automation\T2C_VAP\testng.xml</span>
+            <span class="header-content">C:\Users\dgmarjun\git\TestRepository\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -295,38 +334,38 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyTenantValidation')
-data.setCell(0, 2, 'xlByte.AddTenantTest')
-data.setCell(0, 3, 27586);
+data.setCell(0, 1, 'addMailSetttings')
+data.setCell(0, 2, 'xlByte.MailSettingToTenantTest')
+data.setCell(0, 3, 23381);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'addMailSetttings')
-data.setCell(1, 2, 'xlByte.MailSettingToTenantTest')
-data.setCell(1, 3, 24110);
+data.setCell(1, 1, 'verifyTenantValidation')
+data.setCell(1, 2, 'xlByte.AddTenantTest')
+data.setCell(1, 3, 17738);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testSuperAdminLogin')
 data.setCell(2, 2, 'xlByte.SuperAdminLoginTest')
-data.setCell(2, 3, 16040);
+data.setCell(2, 3, 11445);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'deActivateTenant')
 data.setCell(3, 2, 'xlByte.AddTenantTest')
-data.setCell(3, 3, 1263);
+data.setCell(3, 3, 1015);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyTenant')
+data.setCell(4, 1, 'activateTenant')
 data.setCell(4, 2, 'xlByte.AddTenantTest')
-data.setCell(4, 3, 533);
+data.setCell(4, 3, 315);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'activateTenant')
+data.setCell(5, 1, 'verifyTenant')
 data.setCell(5, 2, 'xlByte.AddTenantTest')
-data.setCell(5, 3, 369);
+data.setCell(5, 3, 147);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'clickOnLogout')
 data.setCell(6, 2, 'xlByte.SuperAdminLoginTest')
-data.setCell(6, 3, 108);
+data.setCell(6, 3, 54);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 54 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -373,89 +412,91 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">launchDriver</span>
-                <span class="method-start">23 ms</span>
+                <span class="method-start">29 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">loadProperty</span>
-                <span class="method-start">7952 ms</span>
+                <span class="method-start">7570 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSuperAdminLogin</span>
-                <span class="method-start">7963 ms</span>
+                <span class="method-start">7582 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clickOnLogout</span>
+                <span class="method-start">19034 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">loadProperty</span>
-                <span class="method-start">24016 ms</span>
+                <span class="method-start">19034 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">clickOnLogout</span>
-                <span class="method-start">24017 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">quitDriver</span>
-                <span class="method-start">24127 ms</span>
+                <span class="method-start">19089 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">xlByte.AddTenantTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">launchDriver</span>
-                <span class="method-start">24371 ms</span>
+                <span class="method-start">19322 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">loadProperty</span>
-                <span class="method-start">31895 ms</span>
+                <span class="method-start">25908 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifyTenantValidation</span>
-                <span class="method-start">31906 ms</span>
+                <span class="method-start">25953 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">loadProperty</span>
-                <span class="method-start">59493 ms</span>
+                <span class="method-start">43867 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyTenant</span>
-                <span class="method-start">59495 ms</span>
+                <span class="method-start">43869 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">loadProperty</span>
-                <span class="method-start">60029 ms</span>
+                <span class="method-start">44016 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">deActivateTenant</span>
-                <span class="method-start">60031 ms</span>
+                <span class="method-start">44018 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">loadProperty</span>
-                <span class="method-start">61295 ms</span>
+                <span class="method-start">45034 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">activateTenant</span>
-                <span class="method-start">61298 ms</span>
+                <span class="method-start">45037 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">logOut</span>
-                <span class="method-start">61668 ms</span>
+                <span class="method-start">45353 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">xlByte.MailSettingToTenantTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">launchDriver</span>
-                <span class="method-start">61967 ms</span>
+                <span class="method-start">45725 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">loadProperty</span>
-                <span class="method-start">68626 ms</span>
+                <span class="method-start">52412 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addMailSetttings</span>
-                <span class="method-start">68638 ms</span>
+                <span class="method-start">52416 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">logOut</span>
-                <span class="method-start">92750 ms</span>
+                <span class="method-start">75797 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

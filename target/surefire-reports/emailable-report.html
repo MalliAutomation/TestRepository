@@ -9,14 +9,34 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">93,351</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">76,155</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">xlByte.AddTenantTest</td><td><a href="#m0">activateTenant</a></td><td rowspan="1">1642316542300</td><td rowspan="1">369</td></tr><tr class="passedeven"><td><a href="#m1">deActivateTenant</a></td><td rowspan="1">1642316541033</td><td rowspan="1">1263</td></tr><tr class="passedeven"><td><a href="#m2">verifyTenant</a></td><td rowspan="1">1642316540497</td><td rowspan="1">533</td></tr><tr class="passedeven"><td><a href="#m3">verifyTenantValidation</a></td><td rowspan="1">1642316512908</td><td rowspan="1">27586</td></tr><tr class="passedodd"><td rowspan="1">xlByte.MailSettingToTenantTest</td><td><a href="#m4">addMailSetttings</a></td><td rowspan="1">1642316549640</td><td rowspan="1">24110</td></tr><tr class="passedeven"><td rowspan="2">xlByte.SuperAdminLoginTest</td><td><a href="#m5">clickOnLogout</a></td><td rowspan="1">1642316505019</td><td rowspan="1">108</td></tr><tr class="passedeven"><td><a href="#m6">testSuperAdminLogin</a></td><td rowspan="1">1642316488965</td><td rowspan="1">16040</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">xlByte.AddTenantTest</td><td><a href="#m0">verifyTenantValidation</a></td><td rowspan="1">1644233582929</td><td rowspan="1">17738</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">xlByte.AddTenantTest</td><td><a href="#m1">activateTenant</a></td><td rowspan="1">1644233602013</td><td rowspan="1">315</td></tr><tr class="passedeven"><td><a href="#m2">deActivateTenant</a></td><td rowspan="1">1644233600994</td><td rowspan="1">1015</td></tr><tr class="passedeven"><td><a href="#m3">verifyTenant</a></td><td rowspan="1">1644233600845</td><td rowspan="1">147</td></tr><tr class="passedodd"><td rowspan="1">xlByte.MailSettingToTenantTest</td><td><a href="#m4">addMailSetttings</a></td><td rowspan="1">1644233609392</td><td rowspan="1">23381</td></tr><tr class="passedeven"><td rowspan="2">xlByte.SuperAdminLoginTest</td><td><a href="#m5">clickOnLogout</a></td><td rowspan="1">1644233576010</td><td rowspan="1">54</td></tr><tr class="passedeven"><td><a href="#m6">testSuperAdminLogin</a></td><td rowspan="1">1644233564558</td><td rowspan="1">11445</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">xlByte.AddTenantTest#activateTenant</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">xlByte.AddTenantTest#deActivateTenant</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">xlByte.AddTenantTest#verifyTenant</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">xlByte.AddTenantTest#verifyTenantValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">xlByte.AddTenantTest#verifyTenantValidation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span _ngcontent-vxe-c237=&quot;&quot;&gt;...&lt;/span&gt; is not clickable at point (1331, 260). Other element would receive the click: &lt;button _ngcontent-vxe-c237=&quot;&quot; mat-button=&quot;&quot; mattooltip=&quot;Deactivate Requirement&quot; class=&quot;mat-focus-indicator mat-button mat-button-base ng-star-inserted&quot; aria-describedby=&quot;cdk-describedby-message-3&quot; cdk-describedby-host=&quot;&quot;&gt;...&lt;/button&gt;
+  (Session info: chrome=97.0.4692.99)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;MALLIKARJUNA-PC&apos;, ip: &apos;172.17.144.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\dgmarjun\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59642}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7ac43e8cecc25a0dd9329e0f80fb9ae2
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+	at pages.TenantsPage.clickOnAddButtton(TenantsPage.java:55)
+	at xlByte.AddTenantTest.verifyTenantValidation(AddTenantTest.java:61)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 40 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">xlByte.AddTenantTest#activateTenant</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">xlByte.AddTenantTest#deActivateTenant</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">xlByte.AddTenantTest#verifyTenant</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m4">xlByte.MailSettingToTenantTest#addMailSetttings</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m5">xlByte.SuperAdminLoginTest#clickOnLogout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m6">xlByte.SuperAdminLoginTest#testSuperAdminLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
